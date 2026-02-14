@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Coffee, LLC — Design &amp; Technology Studio</title>
+  <meta name="description" content="Digital Coffee, LLC is a design and technology studio offering UX audits, branding, design services, UX research, and creative digital products.">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: #1a1a1a;
+      background: #fafafa;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #111;
+      color: #fff;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 8px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #aaa;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    section {
+      padding: 48px 0;
+      border-bottom: 1px solid #e5e5e5;
+    }
+
+    section:last-of-type {
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #111;
+    }
+
+    p, li {
+      font-size: 1rem;
+      color: #444;
+      margin-bottom: 12px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    @media (max-width: 500px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+
+    .service-card {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 20px;
+    }
+
+    .service-card h3 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #111;
+    }
+
+    .service-card p {
+      font-size: 0.9rem;
+      margin-bottom: 0;
+    }
+
+    .products-section h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 4px;
+      margin-top: 24px;
+      color: #111;
+    }
+
+    .product-highlight {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    .product-highlight h3 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      margin-top: 0;
+      color: #111;
+    }
+
+    .product-highlight .price {
+      display: inline-block;
+      background: #111;
+      color: #fff;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 4px 12px;
+      border-radius: 20px;
+      margin-top: 8px;
+    }
+
+    .contact-info {
+      background: #fff;
+      border: 1px solid #e5e5e5;
+      border-radius: 8px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    .contact-info p {
+      margin-bottom: 8px;
+    }
+
+    .contact-info a {
+      color: #111;
+      font-weight: 500;
+    }
+
+    .policy {
+      margin-bottom: 24px;
+    }
+
+    .policy h3 {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #222;
+    }
+
+    footer {
+      background: #111;
+      color: #888;
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 0.85rem;
+    }
+
+    footer strong {
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Digital Coffee, LLC</h1>
+    <p>Design &amp; Technology Studio</p>
+  </header>
+
+  <div class="container">
+
+    <!-- About -->
+    <section>
+      <h2>About Us</h2>
+      <p>
+        Digital Coffee, LLC is a United States-based design and technology studio. We help
+        businesses improve their digital presence through UX audits, design services, branding,
+        and user experience research. We also build our own creative digital products.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section>
+      <h2>Services</h2>
+      <p>We partner with businesses to elevate their digital experiences through research-driven design.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>UX Audits</h3>
+          <p>Comprehensive reviews of your website or app's user experience, with actionable recommendations to improve usability and conversion.</p>
+        </div>
+        <div class="service-card">
+          <h3>Design Services</h3>
+          <p>UI design, visual design, and interaction design for web and mobile applications. From wireframes to polished interfaces.</p>
+        </div>
+        <div class="service-card">
+          <h3>Branding</h3>
+          <p>Brand identity development including logos, color systems, typography, and brand guidelines that resonate with your audience.</p>
+        </div>
+        <div class="service-card">
+          <h3>UX Research</h3>
+          <p>User interviews, usability testing, competitive analysis, and data-driven insights to inform product decisions.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products-section">
+      <h2>Products</h2>
+      <p>Alongside client work, we build and operate our own digital products.</p>
+
+      <div class="product-highlight">
+        <h3>Tantrumify</h3>
+        <p>
+          A comedic web application where users upload a photo and our AI generates a satirical
+          fake news article about the person in the photo. Articles are free to create and share.
+          An optional premium feature generates an AI video dramatization for a one-time fee.
+        </p>
+        <span class="price">Video generation: $1.99 one-time</span>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+      <h2>Contact Us</h2>
+      <p>Interested in working together, need support with one of our products, or have a question? Get in touch.</p>
+      <div class="contact-info">
+        <p><strong>Email:</strong> <a href="mailto:support@digitalcoffee.dev">support@digitalcoffee.dev</a></p>
+        <p><strong>Business Name:</strong> Digital Coffee, LLC</p>
+        <p><strong>Location:</strong> United States</p>
+        <p>We typically respond within 1-2 business days.</p>
+      </div>
+    </section>
+
+    <!-- Policies -->
+    <section>
+      <h2>Policies</h2>
+
+      <div class="policy">
+        <h3>Refund &amp; Dispute Policy</h3>
+        <p>
+          For digital products: if you are unsatisfied with a purchase, you may request a full refund within
+          7 days by contacting us at
+          <a href="mailto:support@digitalcoffee.dev">support@digitalcoffee.dev</a>.
+          Please include the relevant URL or your payment receipt. Refunds are processed back to the
+          original payment method within 5-10 business days.
+        </p>
+        <p>
+          If a paid service fails to deliver (e.g., AI is unable to generate content), you will
+          automatically receive a full refund.
+        </p>
+        <p>
+          For design services: refund terms are outlined in individual project agreements.
+        </p>
+      </div>
+
+      <div class="policy">
+        <h3>Cancellation Policy</h3>
+        <p>
+          Digital product purchases (such as Tantrumify video generation) are one-time payments with no
+          recurring charges or subscriptions. Since content is generated immediately upon payment,
+          cancellations after generation has started are handled through our refund policy above.
+        </p>
+        <p>
+          Design service engagements may be cancelled according to the terms of the project agreement.
+        </p>
+      </div>
+
+      <div class="policy">
+        <h3>Dispute Resolution</h3>
+        <p>
+          If you have a billing dispute, please contact us directly at
+          <a href="mailto:support@digitalcoffee.dev">support@digitalcoffee.dev</a>
+          before filing a chargeback. We are committed to resolving issues quickly and fairly.
+        </p>
+      </div>
+
+      <div class="policy">
+        <h3>Content Disclaimer</h3>
+        <p>
+          All articles and media generated by our entertainment products are entirely fictional and created
+          for entertainment purposes only. Generated content does not represent real news,
+          real events, or the views of Digital Coffee, LLC. Users are responsible for how
+          they share generated content.
+        </p>
+      </div>
+
+      <div class="policy">
+        <h3>Terms of Use</h3>
+        <ul>
+          <li>You must be at least 18 years old to use our paid services.</li>
+          <li>You may only upload photos of yourself or of others with their consent.</li>
+          <li>Generated content is provided "as is" for entertainment purposes.</li>
+          <li>We reserve the right to refuse service or remove content at our discretion.</li>
+          <li>Do not use our services to harass, defame, or harm others.</li>
+          <li>All payments are processed securely through Stripe. We do not store payment information.</li>
+          <li>Digital Coffee, LLC is not liable for how users share or distribute generated content.</li>
+        </ul>
+      </div>
+
+      <div class="policy">
+        <h3>Privacy</h3>
+        <p>
+          For our digital products, we collect uploaded photos solely to generate content. Photos are
+          processed by AI and stored temporarily. We do not sell or share user data with third parties.
+          Payment information is handled entirely by Stripe and never touches our servers. We may collect
+          anonymized usage analytics to improve our products.
+        </p>
+      </div>
+
+    </section>
+
+  </div>
+
+  <footer>
+    <p><strong>Digital Coffee, LLC</strong></p>
+    <p>&copy; 2026 Digital Coffee, LLC. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
