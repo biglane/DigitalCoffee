@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Coffee, LLC — Design &amp; Technology Studio</title>
-  <meta name="description" content="Digital Coffee, LLC is a design and technology studio offering UX audits, branding, design services, UX research, and creative digital products.">
+  <title>Tantrumify — AI-Powered Satirical News Generator</title>
+  <meta name="description" content="Upload a photo and our AI writes a hilarious fake news article about an epic public tantrum. Free to create and share. Optional video generation for $1.99.">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -70,45 +70,51 @@
       margin-bottom: 8px;
     }
 
-    .services-grid {
+    .how-it-works {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
       gap: 16px;
       margin-top: 16px;
     }
 
-    @media (max-width: 500px) {
-      .services-grid { grid-template-columns: 1fr; }
+    @media (max-width: 600px) {
+      .how-it-works { grid-template-columns: 1fr; }
     }
 
-    .service-card {
+    .step {
       background: #fff;
       border: 1px solid #e5e5e5;
       border-radius: 8px;
       padding: 20px;
+      text-align: center;
     }
 
-    .service-card h3 {
+    .step .number {
+      display: inline-block;
+      width: 32px;
+      height: 32px;
+      line-height: 32px;
+      background: #111;
+      color: #fff;
+      border-radius: 50%;
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+
+    .step h3 {
       font-size: 1rem;
       font-weight: 600;
       margin-bottom: 6px;
       color: #111;
     }
 
-    .service-card p {
+    .step p {
       font-size: 0.9rem;
       margin-bottom: 0;
     }
 
-    .products-section h3 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 4px;
-      margin-top: 24px;
-      color: #111;
-    }
-
-    .product-highlight {
+    .pricing-card {
       background: #fff;
       border: 1px solid #e5e5e5;
       border-radius: 8px;
@@ -116,23 +122,37 @@
       margin-top: 16px;
     }
 
-    .product-highlight h3 {
+    .pricing-card h3 {
       font-size: 1.1rem;
       font-weight: 600;
       margin-bottom: 8px;
-      margin-top: 0;
       color: #111;
     }
 
-    .product-highlight .price {
-      display: inline-block;
-      background: #111;
-      color: #fff;
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 4px 12px;
-      border-radius: 20px;
-      margin-top: 8px;
+    .pricing-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f0f0;
+    }
+
+    .pricing-row:last-child {
+      border-bottom: none;
+    }
+
+    .pricing-label {
+      font-weight: 500;
+      color: #222;
+    }
+
+    .pricing-value {
+      font-weight: 700;
+      color: #111;
+    }
+
+    .pricing-value.free {
+      color: #16a34a;
     }
 
     .contact-info {
@@ -179,70 +199,83 @@
 <body>
 
   <header>
-    <h1>Digital Coffee, LLC</h1>
-    <p>Design &amp; Technology Studio</p>
+    <h1>Tantrumify</h1>
+    <p>Upload a photo, expose the inner toddler.</p>
   </header>
 
   <div class="container">
 
     <!-- About -->
     <section>
-      <h2>About Us</h2>
+      <h2>What is Tantrumify?</h2>
       <p>
-        Digital Coffee, LLC is a United States-based design and technology studio. We help
-        businesses improve their digital presence through UX audits, design services, branding,
-        and user experience research. We also build our own creative digital products.
+        Tantrumify is a comedic web application that turns any photo into a hilarious fake news article.
+        Upload a photo of yourself or a friend, and our AI writes a deadpan serious breaking news report
+        about that person throwing an epic public tantrum — complete with a headline, byline, witness quotes,
+        and dramatic details. Share the article with friends for maximum laughs.
+      </p>
+      <p>
+        All generated content is entirely fictional and created purely for entertainment. Tantrumify is
+        operated by Digital Coffee, LLC.
       </p>
     </section>
 
-    <!-- Services -->
+    <!-- How It Works -->
     <section>
-      <h2>Services</h2>
-      <p>We partner with businesses to elevate their digital experiences through research-driven design.</p>
+      <h2>How It Works</h2>
 
-      <div class="services-grid">
-        <div class="service-card">
-          <h3>UX Audits</h3>
-          <p>Comprehensive reviews of your website or app's user experience, with actionable recommendations to improve usability and conversion.</p>
+      <div class="how-it-works">
+        <div class="step">
+          <div class="number">1</div>
+          <h3>Upload a Photo</h3>
+          <p>Choose a photo of yourself or a friend.</p>
         </div>
-        <div class="service-card">
-          <h3>Design Services</h3>
-          <p>UI design, visual design, and interaction design for web and mobile applications. From wireframes to polished interfaces.</p>
+        <div class="step">
+          <div class="number">2</div>
+          <h3>We Write the Story</h3>
+          <p>Our AI analyzes the photo and writes a satirical news article.</p>
         </div>
-        <div class="service-card">
-          <h3>Branding</h3>
-          <p>Brand identity development including logos, color systems, typography, and brand guidelines that resonate with your audience.</p>
-        </div>
-        <div class="service-card">
-          <h3>UX Research</h3>
-          <p>User interviews, usability testing, competitive analysis, and data-driven insights to inform product decisions.</p>
+        <div class="step">
+          <div class="number">3</div>
+          <h3>Share the Madness</h3>
+          <p>Share the fake news article with friends via link, text, or social media.</p>
         </div>
       </div>
     </section>
 
-    <!-- Products -->
-    <section class="products-section">
-      <h2>Products</h2>
-      <p>Alongside client work, we build and operate our own digital products.</p>
+    <!-- Pricing -->
+    <section>
+      <h2>Pricing</h2>
+      <p>Creating and sharing articles is completely free. We offer one optional paid upgrade.</p>
 
-      <div class="product-highlight">
-        <h3>Tantrumify</h3>
-        <p>
-          A comedic web application where users upload a photo and our AI generates a satirical
-          fake news article about the person in the photo. Articles are free to create and share.
-          An optional premium feature generates an AI video dramatization for a one-time fee.
-        </p>
-        <span class="price">Video generation: $1.99 one-time</span>
+      <div class="pricing-card">
+        <div class="pricing-row">
+          <span class="pricing-label">Photo upload &amp; AI article generation</span>
+          <span class="pricing-value free">Free</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-label">Share article via link, social media, text</span>
+          <span class="pricing-value free">Free</span>
+        </div>
+        <div class="pricing-row">
+          <span class="pricing-label">AI-generated video dramatization</span>
+          <span class="pricing-value">$1.99 one-time</span>
+        </div>
       </div>
+
+      <p style="margin-top: 12px; font-size: 0.9rem; color: #666;">
+        Video generation is a one-time purchase per article. No subscriptions, no accounts required.
+        Payments are processed securely through Stripe.
+      </p>
     </section>
 
     <!-- Contact -->
     <section>
       <h2>Contact Us</h2>
-      <p>Interested in working together, need support with one of our products, or have a question? Get in touch.</p>
+      <p>Need help, have a question, or want to report an issue?</p>
       <div class="contact-info">
-        <p><strong>Email:</strong> <a href="mailto:support@digitalcoffee.dev">support@digitalcoffee.dev</a></p>
-        <p><strong>Business Name:</strong> Digital Coffee, LLC</p>
+        <p><strong>Email:</strong> <a href="mailto:support@tantrumify.com">support@tantrumify.com</a></p>
+        <p><strong>Operated by:</strong> Digital Coffee, LLC</p>
         <p><strong>Location:</strong> United States</p>
         <p>We typically respond within 1-2 business days.</p>
       </div>
@@ -255,30 +288,24 @@
       <div class="policy">
         <h3>Refund &amp; Dispute Policy</h3>
         <p>
-          For digital products: if you are unsatisfied with a purchase, you may request a full refund within
-          7 days by contacting us at
-          <a href="mailto:support@digitalcoffee.dev">support@digitalcoffee.dev</a>.
-          Please include the relevant URL or your payment receipt. Refunds are processed back to the
+          If you are unsatisfied with a paid video generation, you may request a full refund within
+          7 days of purchase by contacting us at
+          <a href="mailto:support@tantrumify.com">support@tantrumify.com</a>.
+          Please include the article URL or your payment receipt. Refunds are processed back to the
           original payment method within 5-10 business days.
         </p>
         <p>
-          If a paid service fails to deliver (e.g., AI is unable to generate content), you will
-          automatically receive a full refund.
-        </p>
-        <p>
-          For design services: refund terms are outlined in individual project agreements.
+          If our AI is unable to generate a video for your article, you will automatically receive
+          a full refund.
         </p>
       </div>
 
       <div class="policy">
         <h3>Cancellation Policy</h3>
         <p>
-          Digital product purchases (such as Tantrumify video generation) are one-time payments with no
-          recurring charges or subscriptions. Since content is generated immediately upon payment,
-          cancellations after generation has started are handled through our refund policy above.
-        </p>
-        <p>
-          Design service engagements may be cancelled according to the terms of the project agreement.
+          Video generation is a one-time purchase with no recurring charges or subscriptions.
+          Since content is generated immediately upon payment, cancellations after generation
+          has started are handled through our refund policy above.
         </p>
       </div>
 
@@ -286,7 +313,7 @@
         <h3>Dispute Resolution</h3>
         <p>
           If you have a billing dispute, please contact us directly at
-          <a href="mailto:support@digitalcoffee.dev">support@digitalcoffee.dev</a>
+          <a href="mailto:support@tantrumify.com">support@tantrumify.com</a>
           before filing a chargeback. We are committed to resolving issues quickly and fairly.
         </p>
       </div>
@@ -294,33 +321,32 @@
       <div class="policy">
         <h3>Content Disclaimer</h3>
         <p>
-          All articles and media generated by our entertainment products are entirely fictional and created
-          for entertainment purposes only. Generated content does not represent real news,
-          real events, or the views of Digital Coffee, LLC. Users are responsible for how
-          they share generated content.
+          All articles, headlines, and media generated by Tantrumify are entirely fictional and created
+          for entertainment purposes only. Generated content does not represent real news or
+          real events. Users are responsible for how they share generated content.
         </p>
       </div>
 
       <div class="policy">
         <h3>Terms of Use</h3>
         <ul>
-          <li>You must be at least 18 years old to use our paid services.</li>
+          <li>You must be at least 18 years old to make purchases on Tantrumify.</li>
           <li>You may only upload photos of yourself or of others with their consent.</li>
           <li>Generated content is provided "as is" for entertainment purposes.</li>
           <li>We reserve the right to refuse service or remove content at our discretion.</li>
-          <li>Do not use our services to harass, defame, or harm others.</li>
-          <li>All payments are processed securely through Stripe. We do not store payment information.</li>
-          <li>Digital Coffee, LLC is not liable for how users share or distribute generated content.</li>
+          <li>Do not use Tantrumify to harass, defame, or harm others.</li>
+          <li>All payments are processed securely through Stripe. We do not store your payment information.</li>
+          <li>Tantrumify and Digital Coffee, LLC are not liable for how users share or distribute generated content.</li>
         </ul>
       </div>
 
       <div class="policy">
         <h3>Privacy</h3>
         <p>
-          For our digital products, we collect uploaded photos solely to generate content. Photos are
-          processed by AI and stored temporarily. We do not sell or share user data with third parties.
-          Payment information is handled entirely by Stripe and never touches our servers. We may collect
-          anonymized usage analytics to improve our products.
+          We collect uploaded photos solely to generate articles and videos. Photos are processed by AI
+          and stored on our servers. We do not sell or share user data with third parties. Payment
+          information is handled entirely by Stripe and never touches our servers. We may collect
+          anonymized usage analytics to improve the product.
         </p>
       </div>
 
@@ -329,8 +355,8 @@
   </div>
 
   <footer>
-    <p><strong>Digital Coffee, LLC</strong></p>
-    <p>&copy; 2026 Digital Coffee, LLC. All rights reserved.</p>
+    <p><strong>Tantrumify</strong></p>
+    <p>&copy; Digital Coffee, LLC 2026. All meltdowns reserved.</p>
   </footer>
 
 </body>
