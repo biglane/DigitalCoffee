@@ -25,7 +25,7 @@ export default function Home() {
             Creative Digital Studio
           </p>
           <h1 className="max-w-2xl text-5xl font-bold leading-tight tracking-tight sm:text-6xl">
-            Your Digital Caffeine.<br />Coming Soon.
+            Your Digital Caffeine.
           </h1>
         </div>
       </section>
