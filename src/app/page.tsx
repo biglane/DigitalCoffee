@@ -28,7 +28,16 @@ export default function Home() {
             Your Digital Caffeine.
           </h1>
 
-          {/* TomeWorlds Card */}
+        </div>
+      </section>
+
+      {/* Our Apps */}
+      <section id="apps" className="border-t border-border py-24">
+        <div className="mx-auto max-w-3xl px-6">
+          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-accent">Our Apps</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Things we&apos;re building.
+          </h2>
           <a
             href="https://tomeworlds.com"
             target="_blank"
