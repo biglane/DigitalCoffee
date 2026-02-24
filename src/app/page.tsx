@@ -33,7 +33,7 @@ export default function Home() {
             href="https://tomeworlds.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-10 flex max-w-md overflow-hidden rounded-xl border border-border bg-surface/80 backdrop-blur-sm text-left transition-transform hover:scale-[1.02] hover:border-accent"
+            className="mt-10 flex max-w-lg overflow-hidden rounded-xl border border-border bg-surface/80 backdrop-blur-sm text-left transition-transform hover:scale-[1.02] hover:border-accent"
           >
             <div className="flex-1 px-5 py-4">
               <p className="text-xs uppercase tracking-wider text-muted">tomeworlds.com</p>
@@ -42,8 +42,13 @@ export default function Home() {
                 A worldbuilding app for authors and creators. Organize characters, locations, and lore — all in one place.
               </p>
             </div>
-            <div className="flex w-20 shrink-0 items-center justify-center bg-accent/10 text-2xl">
-              📖
+            <div className="relative w-28 shrink-0">
+              <Image
+                src="/tomeworlds-thumb.png"
+                alt="TomeWorlds"
+                fill
+                className="object-cover"
+              />
             </div>
           </a>
         </div>
