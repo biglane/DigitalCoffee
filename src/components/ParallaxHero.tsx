@@ -49,7 +49,7 @@ export default function ParallaxHero() {
   const handleTouchMove = useCallback((e: TouchEvent) => {
     const deltaY = touchStartY.current - e.touches[0].clientY;
     touchStartY.current = e.touches[0].clientY;
-    applyDelta(deltaY, () => e.preventDefault());
+    applyDelta(deltaY * 1.67, () => e.preventDefault());
   }, [applyDelta]);
 
   // Force scroll to top on mount to prevent browser restore
@@ -81,7 +81,7 @@ export default function ParallaxHero() {
       ref={heroRef}
       className="pointer-events-none absolute inset-0 flex items-center justify-center"
     >
-      <div className="relative h-[100vw] w-[100vw] translate-y-20 sm:h-[1200px] sm:w-[1200px] sm:translate-y-0">
+      <div className="relative h-[100vw] w-[100vw] translate-y-10 sm:h-[1200px] sm:w-[1200px] sm:translate-y-0">
         {/* DC1 — mug/left half, moves left + down */}
         <Image
           src="/dc1.png"
