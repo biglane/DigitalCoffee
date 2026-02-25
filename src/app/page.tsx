@@ -13,6 +13,7 @@ export default function Home() {
           </div>
           <div className="flex gap-6 text-sm text-muted">
             <a href="#about" className="transition-colors hover:text-foreground">About</a>
+            <a href="#support" className="transition-colors hover:text-foreground">Support</a>
           </div>
         </div>
       </nav>
@@ -78,6 +79,22 @@ export default function Home() {
           <p className="mt-4 text-lg leading-relaxed text-muted">
             Based in the United States, we move fast and keep things lean — no bloat, no fluff,
             just good work.
+          </p>
+        </div>
+      </section>
+
+      {/* Support */}
+      <section id="support" className="border-t border-border py-24">
+        <div className="mx-auto max-w-3xl px-6">
+          <p className="mb-2 text-sm font-medium uppercase tracking-widest text-accent">Support</p>
+          <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+            Need help?
+          </h2>
+          <p className="mt-6 text-lg leading-relaxed text-muted">
+            If you have any questions, feedback, or need assistance, reach out to us at{" "}
+            <a href="mailto:support@digital.coffee" className="text-accent underline underline-offset-4 transition-colors hover:text-foreground">
+              support@digital.coffee
+            </a>.
           </p>
         </div>
       </section>
