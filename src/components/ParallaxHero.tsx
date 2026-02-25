@@ -61,7 +61,7 @@ export default function ParallaxHero() {
       ref={heroRef}
       className="pointer-events-none absolute inset-0 flex items-center justify-center"
     >
-      <div className="relative h-[1200px] w-[1200px]">
+      <div className="relative h-[80vh] w-[80vh] sm:h-[1200px] sm:w-[1200px]">
         {/* DC1 — mug/left half, moves left + down */}
         <Image
           src="/dc1.png"
